@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TesteFinal</string>
+    <string name="hint_enter_task">Enter Task</string>
+    <string name="add_task">Add Task</string>
+    <string name="hint_edit_task_name">Edit Task Name</string>
+</resources>

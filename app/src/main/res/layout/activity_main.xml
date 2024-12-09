@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_default">
+
+    <!-- Campo para entrada de texto -->
+    <EditText
+        android:id="@+id/etTask"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/element_height"
+        android:hint="@string/hint_enter_task"
+        android:padding="12dp"
+        android:inputType="text"
+        android:autofillHints="username"
+        android:background="?android:attr/editTextBackground"
+        android:layout_gravity="center_horizontal"
+        android:maxWidth="488dp" />
+
+    <!-- Botão para adicionar tarefa -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/element_height"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/add_task"
+        android:contentDescription="@string/add_task"
+        android:layout_gravity="center_horizontal"
+        android:maxWidth="320dp" />
+
+    <!-- RecyclerView para listar as tarefas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margin_top" />
+</LinearLayout>
